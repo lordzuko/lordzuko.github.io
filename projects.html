@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Homepage of Himanshu Maurya, CSE, IIITDM Jabalpur">
+    <meta name="author" content="Himanshu Maurya" >
+
+    <title>Himanshu Maurya - Academics</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/lordzuko.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <script src="js/google_analytics.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Himanshu Maurya</a>
+        </div>
+
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav nav-icon-hover-name">
+            <li><a href="index.html"><i class="fa fa-user fa-fw"></i> <span class="nav-target-name">Home</span></a></li>
+            <li><a href="academics.html"><i class="fa fa-user fa-book"></i> <span class="nav-target-name">Academics</span></a></li>
+            <li><a href="gallery.html"><i class="fa fa-picture-o fa-fw"></i> <span class="nav-target-name">Gallery</span></a></li>
+            <li><a href="projects.html"><i class="fa fa-gears fa-fw"></i> <span class="nav-target-name">Projects</span></a></li>
+            <li><a href="activities.html"><i class="fa fa-slack fa-fw"></i> <span class="nav-target-name">Activities</span></a></li>
+            <li><a href="resume.pdf"><i class="fa fa-list-alt fa-fw"></i> <span class="nav-target-name">Resume</span></a></li>
+            <li><a href="blog"><i class="fa fa-rss-square fa-fw"></i> <span class="nav-target-name">Blog</span></a></li>
+            <li><a href="contact.html"><i class="fa fa-comments-o fa-fw"></i> <span class="nav-target-name">Contact</span></a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="hidden-xs hidden-sm col-md-4 col-lg-3">
+          <div class="sidenav affix" id="sidebar">
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#ivory-bright" class="list-group-item"><b>Ivory B.R.I.G.H.T</b> <br> <i>Big Data & Hadoop</i></a></li>
+              <li><a href="#mini-data-center" class="list-group-item"><b>Mini Data Center</b> <br> <i>Cloud Computing & Networking</i></a></li>
+              <li><a href="#password-rotation" class="list-group-item"><b>Password Generator in Distributed Env.</b><br><i>Oracle Cloud Engineering</i></a></li>
+              <li><a href="#git-conflict-detector" class="list-group-item"><b>Git Conflict Detector</b> <br> <i>Oracle Cloud Engineering</i></a></li>
+              <li><a href="#lordzukoBlog" class="list-group-item"><b>lordzukoBlog</b> <br> <i>Web Development with Django</i></a></li>
+              <li><a href="#nimble" class="list-group-item"><b>Nimble</b> <br> <i>REST API & MEAN Stack</i></a></li>
+              <li><a href="#plagiarism-detector" class="list-group-item"><b>Plagiarism Detector</b><br> <i>Algorithm Design & Analysis</i></a></li>
+              <li><a href="#multi-player-2048" class="list-group-item"><b>Multiplayer 2048</b><br> <i>Game Dev & Network Programming</i></a></li>
+              <li><a href="#enron" class="list-group-item"><b>Enron Person of Interest</b><br> <i>Machine Learning</i></a></li>
+              <li><a href="#kernighan" class="list-group-item"><b>Parallel Kernighan-Lin Algo</b><br> <i>Parallel Programming OpenMP</i></a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="col-xs-12 col-md-8 col-lg-9">
+        <section class="project" id="ivory-bright">
+          <h3 class="text-success" style="margin-top: -4px;">Ivory B.R.I.G.H.T<a href="https://github.com/lordzuko/IVORY-B.R.I.G.H.T"><i class="fa fa-github fa-fw"></i></a>  <a href="http://lordzuko.github.io/IVORY-B.R.I.G.H.T/"><i class="fa fa-file-text-o fa-fw"></i></a></h3>
+          <p>
+            Designed and implemented an application which provides a <strong>Beautiful,Resourceful,Insightful,Graphical Hadoop Tool</strong><br>
+            It provides
+            <ul>
+              <li>A library for the automatic setup of Hadoop Cluster via command line and Web Interface</li>
+              <li>A Web Graphical User Interface to work and run jobs on Hadoop Cluster</li>
+              <li>An Admin Portal to monitor the cluster</li>
+
+            </ul>
+            The application provides features to use Hadoop Cluster to run Hadoop Framework services like Hive Shell, and others as follows: <br>
+            <ul>
+              <li>Authentication and Authorization of users to use the Hadoop Cluster.</li>
+              <li>User Quota Management</li>
+              <li>Scheduler Control</li>
+              <li>Data Management, File Upload & Running Map-Reduce Tasks</li>
+              <li>For Admin: Dashboard to provide the live cluster statistics & load</li>
+            </ul>
+          </p>
+        </section>
+        <hr>
+
+      </div>
+
+    </div><!-- /.container -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      if($(location.href.split("#")[1])) {
+        var target = $('#'+location.href.split("#")[1]);
+        if (target.length) {
+          $('body').animate({
+            scrollTop: target.offset().top - 70
+          }, 400);
+        }
+      }
+
+      $('#sidebar ul li a').click(function(){
+        $('body').animate({
+          scrollTop: $($( this ).attr('href') + ' > h3').offset().top - 70
+        }, 400);
+      });
+    </script>
+  </body>
+</html>

@@ -6,14 +6,14 @@
     <meta name="description" content="Homepage of Himanshu Maurya, CSE, IIITDM Jabalpur">
     <meta name="author" content="Himanshu Maurya" >
 
-    <link rel="shortcut icon" href="img/favicon.ico">
-
-    <title>Lordzuko - Home</title>
+    <title>Himanshu Maurya - Gallery</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/lordzuko.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/swipebox.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/justifiedGallery.min.css" rel="stylesheet">
     <script src="js/google_analytics.js"></script>
 
   </head>
@@ -47,52 +47,39 @@
       </div><!-- /.container -->
     </div>
 
-    <div class="container">            
-      <div class="row">
-        <div class="hidden-xs col-sm-4 col-md-3">
-          <span class="visible-sm" style="margin-bottom: 80px;"></span>
-          <span class="visible-md" style="margin-bottom: 52px;"></span>
-          <span class="visible-lg" style="margin-bottom: 62px;"></span>
-          <img src="img/intro-pic.jpg" class="img-responsive circular" style="border-radius: 300px;"/>
-        </div>
-        <div class="col-sm-8 col-md-9" style="text-align: justify">
-          <br class="visible-lg">
-          <img src="img/intro-pic.jpg" class="visible-xs img-responsive" style="height: 78px; margin-right: 16px; border-radius: 300px;" align="left"/>
-          <h1><b>Himanshu</b> <span class="text-success">Maurya</span><br><small> = <i class="fa fa-cutlery fa-fw text-danger"></i> + <i class="fa fa-bed  text-success"></i> + <i class="fa fa-keyboard-o fa-fw text-warning"></i> </small></h1>
-          <hr style="margin-bottom: 32px"><h4>
-              I am a senior undergraduate studying <a href="http://cse.iiitdmj.ac.in/">Computer Science and Engineering</a> from <a href="http://www.iiitdmj.ac.in/"> Indian Institute of Information Technology,Design & Manufacturing, Jabalpur</a>. I am passionate about technology and have a lot of interest in computer science and programming.I spend a lot of my time learning new technology and working on projects. I also enjoy discussing ideas and sharing knowledge by taking sessions.<br> I enjoy working on challenging
-              problems & complex systems especially when someone says it's not possible <i class="fa fa-smile-o text-danger" aria-hidden="true"></i>.
-          </h4>
-        </div>
-      </div>
-
-      <hr>
+    <div class="container">
 
       <div class="row">
         <div class="col-xs-12">
-          <h3 class="text-success"><i class="fa fa-history fa-fw text-success"></i> Recent News ...</h3>
-            <div class="col-xs-12 col-md-6">
-              <div class="news-event">
-                <span>Feb '16</span> &#x2771; Started <a href="/blog">blogging</a>
-              </div>
-            </div>
-            <br class="visible-xs visible-sm">
-            <div class="col-xs-12 col-md-6">
-              <div class="news-event">
-                <span>May '15</span> &#x2771; Created open source applicaion, Ivory B.R.I.G.H.T
-              </div>
-            </div>
+          <h3 class="text-success"><i class="fa fa-photo fa-fw"></i> A few clicks...</h3>
+          <div id="gallery">
+            <a href="img/img001.jpg" title="Singapore"><img src="img/img001.jpg"/></a>
+          </div>
         </div>
       </div>
-
-    <hr>
-
-
 
     </div><!-- /.container -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/swipebox.min.js"></script>
+    <script src="js/justifiedGallery.min.js"></script>
+    <script>
+      $(function() {
+        $("#gallery").justifiedGallery({
+          sizeRangeSuffixes: {'lt100':'', 
+                              'lt240':'', 
+                              'lt320':'', 
+                              'lt500':'', 
+                              'lt640':'', 
+                              'lt1024':''},
+          randomize: true,
+          lastRow: 'justify',
+          captionsAnimationDuration: 512
+        }).on('jg.complete', function() {
+          $('#gallery a').swipebox();
+        });
+      });
+    </script>
   </body>
 </html>
