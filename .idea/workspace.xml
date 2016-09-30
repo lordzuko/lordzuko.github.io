@@ -103,10 +103,10 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+              <caret line="75" column="90" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
               <folding>
-                <element signature="e#4575#4583#0" expanded="true" />
-                <element signature="e#4729#4737#0" expanded="true" />
+                <element signature="e#4574#4582#0" expanded="true" />
+                <element signature="e#4725#4733#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -553,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475242419779</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added new's event">
+      <created>1475245709374</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1475245709374</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -692,8 +699,8 @@
         <state relative-caret-position="1518">
           <caret line="69" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="7" />
           <folding>
-            <element signature="e#4575#4583#0" expanded="true" />
-            <element signature="e#4729#4737#0" expanded="true" />
+            <element signature="e#4574#4582#0" expanded="true" />
+            <element signature="e#4725#4733#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1020,10 +1027,10 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+          <caret line="75" column="90" selection-start-line="75" selection-start-column="90" selection-end-line="75" selection-end-column="90" />
           <folding>
-            <element signature="e#4575#4583#0" expanded="true" />
-            <element signature="e#4729#4737#0" expanded="true" />
+            <element signature="e#4574#4582#0" expanded="true" />
+            <element signature="e#4725#4733#0" expanded="true" />
           </folding>
         </state>
       </provider>
