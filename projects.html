@@ -163,25 +163,32 @@
         <section class="project" id="multi-player-2048">
           <h3 class="text-success" style="margin-top: -4px;">Multiplayer 2048<a href="https://github.com/lordzuko/2048-multiplayer"><i class="fa fa-github fa-fw"></i></a><a href="http://lordzuko.github.io/2048-multiplayer/"><i class="fa fa-file-text-o fa-fw"/></i></a> </h3>
           <p>
-            You can choose to start a new multiplayer match with a randomly chosen opponent or invite your friends to play with.<br>
-            The game is played on a single board shared between both the players who take turns to play. The score of a player is computed<br>
-            by the number on the tiles that the player merges when playing his turn. The game ends when there are no moves remaining or <br>
-            someone reaches the 2048 tile. At this point, the player with the highest score wins the game.
-          </p>
-          <p>
-            You can move the tiles in four directions using the arrow keys: up, down, left, and right. All numbers on the board will slide into<br>
-            that direction until they hit the wall and if they bump into each other then two numbers will be combined into one if they have the<br>
-            same value. Each number will only be combined once per move. Every move a new number 2 or 4 appears. If you have a 2048 on the board
-            you have won, but you lose once the board is full and you cannot make a move.<br><br>
+            Our aim is to create a contest environment for 2048 game. We will follow the client server model, in which one computer<br>
+            is assigned as the server and all the clients connect to the server. The clients can play the game, and their status, scores<br>
+            etc. will be displayed/stored on the server.
+            <br><br>
             <img class="img-responsive" src="https://camo.githubusercontent.com/84663f2b77ba0bdfb08338c59d9f15d55f09cbbe/687474703a2f2f7777772e6c656173657765626c6162732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031342f30332f32303438312e706e67">
             <br>
             <ul>Following Features has been implemented as part of game
-              <li></li>
+              <li>Display a leaderboard dashboard of all currently active players</li>
+              <li>User authentication for clients using username and password</li>
+              <li>User accounts should store the records of all games of that user</li>
+              <li>Proper registration mechanism(with password recovery question)</li>
+              <li>Every activity of clients should be written to log with timestamps</li>
+              <li>A control/Admin Panel at the server portal to control and configure various options</li>
+              <li>Crash recovery in case of sudden failure of network/computer/electricity</li>
             </ul>
           </p>
 
         </section>
         <hr>
+
+        <section class="project" id="enron">
+          <h3></h3>
+          <p></p>
+        </section>
+        <hr>
+
         <section class="project" id="portfolio">
           <h3 class="text-success" style="margin-top: -4px">Lordzuko's Portfolio<a href="https://github.com/lordzuko/lordzuko.github.io"><i class="fa fa-github fa-fw"></i></a><a href="https://lordzuko.github.io/"><i class="fa fa-file-text-o fa-fw"/></i></a> </h3>
           <p>
