@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d87178da-d041-40cb-bb90-16c46867bb74" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img001.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img002.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img003.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img004.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img005.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img006.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img007.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img008.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gallery/img009.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/justifiedGallery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/swipebox.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gallery.html" afterPath="$PROJECT_DIR$/gallery.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="lordzuko.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swipebox.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="swipebox.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/swipebox.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
@@ -100,15 +88,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1716">
-              <caret line="78" column="103" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
+            <state relative-caret-position="646">
+              <caret line="84" column="97" selection-start-line="84" selection-start-column="97" selection-end-line="84" selection-end-column="97" />
               <folding>
-                <element signature="e#4574#4582#0" expanded="true" />
                 <element signature="e#4724#4732#0" expanded="true" />
-                <element signature="e#4888#4896#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -145,9 +131,9 @@
         <option value="$PROJECT_DIR$/academics.html" />
         <option value="$PROJECT_DIR$/css/lordzuko.css" />
         <option value="$PROJECT_DIR$/activities.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/gallery.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -602,14 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1475354742015</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added pics in gallery and js libraries and a loader.gif">
+      <created>1475356453542</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1475356453542</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20139635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20139635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -671,7 +664,8 @@
     <MESSAGE value="Added new's event &amp; Made small modifications in projects and activities" />
     <MESSAGE value="Added Projects and modified projects" />
     <MESSAGE value="Added Enron Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Enron Project" />
+    <MESSAGE value="Added pics in gallery and js libraries and a loader.gif" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pics in gallery and js libraries and a loader.gif" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -741,9 +735,7 @@
         <state relative-caret-position="1518">
           <caret line="69" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="7" />
           <folding>
-            <element signature="e#4574#4582#0" expanded="true" />
             <element signature="e#4724#4732#0" expanded="true" />
-            <element signature="e#4888#4896#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1050,18 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1716">
-          <caret line="78" column="103" selection-start-line="78" selection-start-column="103" selection-end-line="78" selection-end-column="103" />
-          <folding>
-            <element signature="e#4574#4582#0" expanded="true" />
-            <element signature="e#4724#4732#0" expanded="true" />
-            <element signature="e#4888#4896#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-246">
@@ -1099,6 +1079,16 @@
         <state relative-caret-position="415">
           <caret line="120" column="37" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="84" column="97" selection-start-line="84" selection-start-column="97" selection-end-line="84" selection-end-column="97" />
+          <folding>
+            <element signature="e#4724#4732#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
