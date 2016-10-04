@@ -75,20 +75,25 @@
     <script src="js/justifiedGallery.min.js"></script>
     <script>
       $(function() {
+
         $("#gallery").justifiedGallery({
-          sizeRangeSuffixes: {'lt100':'', 
-                              'lt240':'', 
-                              'lt320':'', 
-                              'lt500':'', 
-                              'lt640':'', 
-                              'lt1024':''},
+          sizeRangeSuffixes: {
+                              'lt100':'',
+                              'lt240':'',
+                              'lt320':'',
+                              'lt500':'',
+                              'lt640':'',
+                              'lt1024':''
+                              },
           randomize: true,
+          captionsAnimationDuration:512,
           lastRow: 'justify',
-          captionsAnimationDuration: 512
-        }).on('jg.complete', function() {
+          margin:10,
+        }).on('jg.complete',function () {
           $('#gallery a').swipebox();
         });
       });
+
     </script>
   </body>
 </html>
