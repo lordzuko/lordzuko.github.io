@@ -1,63 +1,156 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Homepage of Himanshu Maurya, CSE, IIITDM Jabalpur">
-    <meta name="author" content="Himanshu Maurya" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Blog</title>
 
-    <title>lordzukoBlog</title>
+	
+<meta name="description" content="Blog" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/lordzuko.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <script src="../js/google_analytics.js"></script>
+
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/isikdogan.css" rel="stylesheet">
+	<link href="../css/font-awesome.min.css" rel="stylesheet">
 
   </head>
 
   <body>
 
-    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>x
-          <a class="navbar-brand" href="index.html">lordzukoBlog</a>
-        </div>
-
-        <div class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav nav-icon-hover-name">
-            <li><a href="../index.html"><i class="fa fa-user fa-fw"></i> <span class="nav-target-name">Home</span></a></li>
-            <li><a href="../academics.html"><i class="fa fa-user fa-book"></i> <span class="nav-target-name">Academics</span></a></li>
-            <li><a href="../gallery.html"><i class="fa fa-picture-o fa-fw"></i> <span class="nav-target-name">Gallery</span></a></li>
-            <li><a href="../projects.html"><i class="fa fa-gears fa-fw"></i> <span class="nav-target-name">Projects</span></a></li>
-            <li><a href="../activities.html"><i class="fa fa-slack fa-fw"></i> <span class="nav-target-name">Activities</span></a></li>
-            <li><a href="../resume.pdf"><i class="fa fa-list-alt fa-fw"></i> <span class="nav-target-name">Resume</span></a></li>
-            <li><a href="index.html"><i class="fa fa-rss-square fa-fw"></i> <span class="nav-target-name">Blog</span></a></li>
-            <li><a href="../contact.html"><i class="fa fa-comments-o fa-fw"></i> <span class="nav-target-name">Contact</span></a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </div>
-
-
+  <div class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+      <ul class="nav navbar-nav">
+          <li><a href="../index.html"><span class="fa fa-home fa-fw"></span> Home</a></li>
+          <li><a href="../blog/index.html"><span class="fa fa-pencil-square-o fa-fw"></span> Blog & Videos</a></li>
+          <!-- <li><a href="../projects.html"><span class="fa fa-cubes fa-fw"></span> Projects</a></li> -->
+          <li><a href="http://github.com/lordzuko" target="_blank"><span class="fa fa-github fa-fw"></span> GitHub</a></li>
+          <li><a href="https://www.youtube.com/c/HimanshuMauryalordzuko" target="_blank"><span class="fa fa-youtube-play fa-fw"></span> YouTube</a></li>
+          <li><a href="https://www.instagram.com/zuko2/" target="_blank"><span class="fa fa-instagram fa-fw"></span> Instagram</a></li>
+          <li><a href="https://www.linkedin.com/in/zuko2" target="_blank"><span class="fa fa-linkedin fa-fw"></span> LinkedIn</a></li>
+          <!-- <li><a href="https://scholar.google.com/citations?user=Esqaj-4AAAAJ&hl=en&oi=ao" target="_blank"><span class="fa fa-graduation-cap fa-fw"></span> Google Scholar</a></li> -->
+      </ul>
+  </div>
+  </div>
 
     <div class="container">
+		<div class="main row">
+			
 
-      <h1 style="text-align: center">Coming Soon!!</h1>
+	<form>
+		<input type="text" class="form-control" id="search" placeholder="Search...">
+	</form>
+
+	<div id="search-results-text" style="display:none">
+	<hr/>
+		<button id="back" class="btn btn-default btn-sm pull-right"><i class="fa fa-arrow-left fa-fw"></i> Go back</button>
+		<i class="fa fa-search fa-fw"></i> Search resutls for <code id="search-query"></code>:
+	</div>
+
+	<hr/>
+
+	<div class="list-of-posts">
+		
+		<div class="itembox">
+			<h3><a href="posts/markdown-example.html">Markdown example
+</a></h3>
+			<span class="date">February 23, 2015</span>
+			<hr class="short clear"/>
+			<img class="pull-right blog-index-thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=16&txt=100x100&w=100&h=100
+" alt="thumbnail"/>
+			<p>An example from the Markdown Wikipedia page
+</p>
+			<div class="vspace"></div>
+			<a class="btn btn-default btn-sm" href="posts/markdown-example.html">Read on</a>
+		</div>
+		
+		<div class="itembox">
+			<h3><a href="posts/an-example-blog-post-with-a-responsive-video-embed.html">An example blog post with a responsive video embed
+</a></h3>
+			<span class="date">February 22, 2015</span>
+			<hr class="short clear"/>
+			<img class="pull-right blog-index-thumbnail" src="https://i.ytimg.com/vi/VOi6LWzkCf4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDLnmfHAa3XOz_1yXsR8Wc1cQSXCg
+" alt="thumbnail"/>
+			<p>An example blog post with a responsive video embed
+</p>
+			<div class="vspace"></div>
+			<a class="btn btn-default btn-sm" href="posts/an-example-blog-post-with-a-responsive-video-embed.html">Read on</a>
+		</div>
+		
+		<div class="itembox">
+			<h3><a href="posts/lorem-ipsum.html">Lorem ipsum
+</a></h3>
+			<span class="date">February 21, 2015</span>
+			<hr class="short clear"/>
+			<img class="pull-right blog-index-thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=16&txt=100x100&w=100&h=100
+" alt="thumbnail"/>
+			<p>Article summary comes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+			<div class="vspace"></div>
+			<a class="btn btn-default btn-sm" href="posts/lorem-ipsum.html">Read on</a>
+		</div>
+		
+	</div>
+
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script>
+(function ($) {
+	// custom css expression for a case-insensitive contains()
+	jQuery.expr[':'].Contains = function(a,i,m){
+		return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+	};
+
+	function listFilter() {
+
+		$('#search')
+		.change( function () {
+			$('#search-results-text').show();
+
+			var filter = $(this).val();
+			if(filter) {
+				// this finds all links in a list that contain the input,
+				// and hide the ones not containing the input while showing the ones that do
+				$('.list-of-posts').find("div:not(:Contains(" + filter + "))").hide();
+				$('.list-of-posts').find("div:Contains(" + filter + ")").show();
+				$('#search-query').text(filter);
+				} else {
+					$('#search-results-text').hide();
+					$('.list-of-posts').find("div").show();
+			}
+			return false;
+		})
+		.keyup( function () {
+			// fire the above change event after every letter
+			$(this).change();
+		});
+
+		$( ".tag" ).click(function() {
+			$('#search').val($(this).text());
+			$('#search').change();
+		});
+
+		$( "#back" ).click(function() {
+			$('#search').val("");
+			$('#search').change();
+		});
+	}
+
+	//ondomready
+	$(function () {
+		listFilter($());
+	});
+}(jQuery));
+
+</script>
+
+
+		</div>
 
     </div><!-- /.container -->
 
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
+	<link rel="icon" href="http://www.isikdogan.com/favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   </body>
 </html>
