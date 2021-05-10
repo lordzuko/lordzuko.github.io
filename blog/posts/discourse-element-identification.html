@@ -77,7 +77,7 @@
 <li>Binary Feature:</li>
 <li>Relative position of sentence in essay: <em>first</em>, <em>last</em>, <em>body</em></li>
 <li>Relative position of sentence in paragraph: <em>first</em>, <em>last</em>, <em>body</em></li>
-<li>Maybe use of positional embedding cyclic function to general a floating number </li>
+<li>Maybe use of positional embedding cyclic function to general a floating number</li>
 </ul>
 <hr />
 <h3>Indicator Features</h3>
@@ -97,14 +97,11 @@
 <li>Number of words</li>
 <li>Number of clauses</li>
 <li>Number of sentences</li>
-<li>Punctuation based binary features:</li>
-<li>Sentence ends with:<ul>
+<li>Punctuation based binary features where sentence ends with:</li>
 <li>full stop</li>
 <li>question mark</li>
 <li>exclamation mark</li>
 <li>no sentence final punctuation</li>
-</ul>
-</li>
 </ul>
 <hr />
 <h3>Topic and prompt features</h3>
@@ -116,7 +113,8 @@ same way to more than one members of another chain, which can be used to disting
 tokens from peripheral tokens.</p>
 <h1>Cohesion features</h1>
 <h2>Cohesive Chains</h2>
-<h2><img src="https://github.com/lordzuko/lordzuko.github.io/blob/master/blog/posts-images/discourse-element-identification/1.png?raw=true"></h2>
+<p><img src="https://github.com/lordzuko/lordzuko.github.io/blob/master/blog/posts-images/discourse-element-identification/1.png?raw=true"></p>
+<hr />
 <h3>Identity Chains</h3>
 <p>Find identities based on <strong>POS/NE</strong> tags. Perform a pronoun resolution for these entities within the same paragraph.  an identity and all its <strong>anaphora</strong> together form an <strong>identity chain</strong>.</p>
 <hr />
@@ -126,7 +124,10 @@ tokens from peripheral tokens.</p>
   - <a href="https://github.com/recognai/spacy-wordnet">spacy-wordnet</a>
   - <a href="https://conceptnet.io/">conceptnet.io</a>
   - <a href="https://github.com/explosion/sense2vec">sense2vec</a></p>
-<h2>* <strong>NOTE</strong>: We discard identity and lexical chains that exist within single sentences, since they can’t capture cohesive relations among sentences.</h2>
+<ul>
+<li><strong>NOTE</strong>: We discard identity and lexical chains that exist within single sentences, since they can’t capture cohesive relations among sentences.</li>
+</ul>
+<hr />
 <h2>Global and Local Sentence Chains</h2>
 <p>Sentences that contain members from the same identity chain or lexical chain form a sentence chain.</p>
 <ul>
@@ -155,8 +156,8 @@ tokens from peripheral tokens.</p>
 * Local Interaction: If two chains which interact are both local chains</p>
 <p>The shared sentences by two chains are named as global or local interaction sentences</p>
 <p>Two binary features are created here:
-* <strong>is-global-interaction-sentence</strong>
-* <strong>is-local-interaction-sentence</strong></p>
+1. <strong>is-global-interaction-sentence</strong>
+2 <strong>is-local-interaction-sentence</strong></p>
 <hr />
 <h3>Strength features</h3>
 <p>These features can be used to measure the overall strength of sentence chains that involve a sentence.</p>
@@ -168,7 +169,9 @@ tokens from peripheral tokens.</p>
 </ul>
 <hr />
 <h3>Installing Neuralcoref</h3>
-<p><strong>NOTE</strong> I had a lot of issue installing Neuralcoref from source or from pip. There were multiple binary issues.</p>
+<ul>
+<li><strong>NOTE</strong> I had a lot of issue installing Neuralcoref from source or from pip. There were multiple binary issues.</li>
+</ul>
 <p>Atlast, I simply installed it using conda which seems to work fine. </p>
 <p><code>conda install -c conda-forge neuralcoref</code></p>
 <p>This makes life very easy after multiple failures. Another reason I love conda</p>
