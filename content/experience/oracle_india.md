@@ -5,7 +5,7 @@ dateString: June 2016 - Nov 2016
 draft: false
 tags: ["Python", "Docker", "Automation", "Cloud Computing", "Linux"]
 showToc: false
-weight: 302
+weight: 309
 --- 
 
 ### Description
