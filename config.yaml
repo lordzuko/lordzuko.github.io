@@ -1,0 +1,107 @@
+baseURL: "https://lordzuko.github.io/"
+languageCode: en-us
+title: Himanshu Maurya
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+    # - identifier: archive
+    #   name: Archives
+    #   url: archives
+    #   weight: 60
+
+    - identifier: tags
+      name: Tags
+      url: /tags
+      weight: 60
+
+    # - identifier: Notes
+    #   name: Notes
+    #   url: https://lordzuko.github.io/second-brain/
+    #   weight: 80
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Himanshu Maurya"
+    subtitle: "Hi, there 👋. My name is Himanshu Maurya. I am a masters student in Speech and Language Processing at University of Edinburgh. I am also a Mentor-Reviewer @udacity School of Artificial Intelligence and an Ex-Lead Machine Learning Engineer @iSchoolConnect."
+    imageUrl: "home/me.jpg"
+    imageWidth: 400
+    imageHeight: 500
+    # buttons:
+    #   - name: Resume
+    #     url: ""
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:himanshumaurya2214225@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/lordzuko/"
+    - name: "github"
+      url: "https://github.com/lordzuko"
+    - name: "youtube"
+      url: "https://www.youtube.com/@HimanshuMauryalordzuko/"
+    - name: "cv"
+      url: "/home/Himanshu_Maurya_CV.pdf"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
