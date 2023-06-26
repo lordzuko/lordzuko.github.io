@@ -4,7 +4,7 @@ description: "Can we align model's perception of speaking style to human?"
 draft: false
 dateString: June 2023
 tags: ["TTS", "PyTorch", "FastSpeech2"]
-showToc: false
+showToc: true
 weight: 203
 # cover:
 #     image: "projects/automated-image-captioning/cover.jpg"
