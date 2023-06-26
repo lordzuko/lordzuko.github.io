@@ -1,5 +1,5 @@
 ---
-title: "Gaussian Processes"
+title: "Bayesian Optimization using Gaussian Processes"
 description: "Bayesian learning in action"
 draft: false
 dateString: June 2023
