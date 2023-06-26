@@ -23,3 +23,30 @@ Record your speech and build a unit selection voice for Festival. Create variati
 - [Data](https://drive.google.com/drive/folders/11qP_Hcm8PpKr8L2hLKKKfZZDOx-8PDDR?usp=sharing)
 - [Qualtrics Survey](/projects/unit-selection-voice/Speech_Synthesis.qsf)
 
+## Citations
+
+[1] R. A. J. Clark, K. Richmond, and S. King, “Festival 2 - build your own general purpose unit selection speech synthesiser,” in Speech Synthesis Workshop, 2004.
+
+[2] R. Clark, K. Richmond, and S. King, “Multisyn: Open-domain unit selection for the festival speech synthesis system,” Speech Communication, vol. 49, no. 4, pp. 317–330, Apr. 2007.
+
+[3] S. Young, G. Evermann, M. Gales, T. Hain, D. Kershaw, G. Moore, J. Odell, D. Ollason, D. Povey, V. Valtchev, and P. Woodland, The HTK Book (from version 3.3), 01 2004.
+
+[4] J. Kominek and A. W. Black, “The cmu arctic speech databases,” in Speech Synthesis Workshop, 2004.
+
+[5] A. W. Black and K. A. Lenzo, “Optimal data selection for unit selection synthesis,” in Speech Synthesis Workshop, 2001.
+
+[6] CSTR, The University of Edinburgh, “Speechrecorder.” [Online]. Available: https://www.cstr.ed.ac.uk/research/projects/speechrecorder/
+
+[7] J. Taylor and K. Richmond, “Confidence Intervals for ASR-Based TTS Evaluation,” in Proc. Interspeech 2021, 2021, pp. 2791–2795.
+
+[8] A. Radford, J. W. Kim, T. Xu, G. Brockman, C. McLeavey, and I. Sutskever, “Robust speech recognition via large-scale weak supervision,” 2022. [Online]. Available: https://arxiv.org/abs/2212.04356
+
+[9] Y. Medan, E. Yair, and D. Chazan, “Super resolution pitch determination of speech signals,” IEEE Trans. Signal Process., vol. 39, pp. 40–48, 1991.
+
+[10] D. Talkin, “Reaper: Robust epoch and pitch estimator,” https://github. com/google/REAPER, 2013.
+
+[11] D. Jouvet and Y. Laprie, “Performance analysis of several pitch detection algorithms on simulated and real noisy speech data,” 2017 25th European Signal Processing Conference (EUSIPCO), pp. 1614–1618, 2017.
+
+[12] F. Wilcoxon, “Individual comparisons by ranking methods,” Biometrics, vol. 1, pp. 196–202, 1945.
+
+[13] M. Chu, C. Li, H. Peng, and E. Chang, “Domain adaptation for tts systems,” in 2002 IEEE International Conference on Acoustics, Speech, and Signal Processing, vol. 1, 2002, pp. I–453–I–456.
