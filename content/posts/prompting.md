@@ -25,31 +25,31 @@ Readings:
 * Now we are moving towards `pre-train, prompt, predict` paradigm. Instead of adapting pre-trained LMs to downstream tasks via `objective-engineering`, we are reformulating the downstream tasks to look more like those solved during the original LM training with the help of textual `prompt`
 	* Eg:`“I felt so ___” `, and ask the LM to fill the blank with an emotion-bearing word. Or if we choose the prompt `“English: I missed the bus today. French: ”`), an LM may be able to fill in the blank with a French translation.
 
-![image]("/posts/prompting/Screenshot 2023-05-03 at 7.31.59 PM.png")
+![image](/posts/prompting/1.png)
 ### Prompting Basics
-![image]("/posts/prompting/Screenshot 2023-05-03 at 7.35.05 PM.png")
+![image](/posts/prompting/2.png)
 * **Terminologies**:
-	* `prefix prompt`: variety of prompt where the input text comes entirely before $$\bf{z}$$
+	* `prefix prompt`: variety of prompt where the input text comes entirely before $\bf{z}$
 	* `cloze prompt`: the first variety of prompt with a slot to fill in the middle of the text
 
- * **Prompt Addition**: $$f_{prompt}(x)$$ is applied on $$\bf{x}$$ to to generate $$\mathbf{x}' = f_{prompt}(x)$$
+ * **Prompt Addition**: $f_{prompt}(x)$ is applied on $\bf{x}$ to to generate $\mathbf{x}' = f_{prompt}(x)$
 	1. Apply a template, which is a textual string that has two slots: an input slot [X] for input x and an answer slot [Z] for an intermediate generated answer text z that will later be mapped into y.
-	2. Fill slot [X] with the input text $$\bf{x}$$.
+	2. Fill slot [X] with the input text $\bf{x}$.
 * **Answer Search**: 
-	* we search for the highest-scoring text $$\bf{z}ˆ$$ that maximizes the score of the LM. We first define $$Z$$ as a set of permissible values for $$\bf{z}$$.
-		$$$$
+	* we search for the highest-scoring text $\bf{z}ˆ$ that maximizes the score of the LM. We first define $Z$ as a set of permissible values for $\bf{z}$.
+		$$
 	\hat{z} = \underset{z \epsilon Z}{search} P(f_{fill}(x', z);\theta)
-		$$$$
-	* $$Z$$ could take variety of input:
+		$$
+	* $Z$ could take variety of input:
 		* **classification**: could be a small subset of the words `{“excellent”, “good”, “OK”, “bad”, “horrible”}` or `{++, +, ~, -, --}`
 		* **regression**: continuous values, constants 
 
-* **Answer Mapping**: we would like to go from the highest-scoring answer $$zˆ$$ to the highest-scoring output $$yˆ$$. This is trivial for cases, where answer itself is the output, however for cases where multiple result could result in the same output, we need a mapping function:
+* **Answer Mapping**: we would like to go from the highest-scoring answer $zˆ$ to the highest-scoring output $yˆ$. This is trivial for cases, where answer itself is the output, however for cases where multiple result could result in the same output, we need a mapping function:
 	* sentiment-bearing words (e.g. “excellent”, “fabulous”, “wonderful”) to represent a single class (e.g. “++”)
 
 * **Design Considerations for Prompting**
 
-![image]("/posts/prompting/Screenshot 2023-05-03 at 7.36.37 PM.png")
+![image](/posts/prompting/3.png)
 
 ### Pre-trained Language Models
 
@@ -70,17 +70,17 @@ The main training objective of the pre-trained LMs plays an important role in de
 		* These are particularly suitable for `prefix prompts`
 	
 * **Denoising Objective**:
-	* Noising function: $$\tilde{f} = f_{noise}(x)$$
-	* Task to predict: $$P(x|\tilde{x})$$
+	* Noising function: $\tilde{f} = f_{noise}(x)$
+	* Task to predict: $P(x|\tilde{x})$
 	* These types of reconstruction objectives are suitable for `cloze prompts`
 	* Two common types of denoising objectives
 		* **Corrupted Text Reconstruction (CTR)**: the processed text to its uncorrupted state by calculating *loss over only the noised parts* of the input sentence
 		* **Full Text Reconstruction (FTR)**: reconstruct the text by *calculating the loss over the entirety of the input texts* whether it has been noised or not
 	* **Noising Functions**
-		* the specific type of corruption applied to obtain the noised text $$\tilde{x}$$ has an effect on the efficacy of the learning algorithm
+		* the specific type of corruption applied to obtain the noised text $\tilde{x}$ has an effect on the efficacy of the learning algorithm
 		* **prior knowledge can be incorporated by controlling the type of noise**, e.g. *the noise could focus on entities of a sentence, which allows us to learn a pre-trained model with particularly high predictive performance for entities*
 
-![image]("/posts/prompting/Screenshot 2023-05-03 at 8.55.29 PM.png")
+![image](/posts/prompting/4.png)
 
 
 * **SLM** or **FTR** objectives are maybe more suitable for *generation tasks*
@@ -102,14 +102,14 @@ The main training objective of the pre-trained LMs plays an important role in de
 * **Left-to-right:** diagonal attention masking 
 * Mix the two strategies
 
-![image](/posts/prompting/Screenshot 2023-05-03 at 9.00.35 PM.png)
+![image](/posts/prompting/5.png)
 
 #### Typical Pre-training Methods
 
 Following is a representation of popular pre-training methods:
-![image]("/posts/prompting/Screenshot 2023-05-03 at 9.02.59 PM.png")
+![image](/posts/prompting/6.png)
 
-![image]("/posts/prompting/Screenshot 2023-05-03 at 9.02.42 PM.png")
+![image]("/posts/prompting/7.png")
 * **Left-to-Right Language Model**
 	* Popular backbone for many prompting methods. Representative examples of modern pre-trained left-to-right LMs include **GPT-3** , and **GPT-Neo**
 	* Generally large and difficult to train - generally not available to public, thus `pretraining and finetuning`  is generally not possible
@@ -123,17 +123,17 @@ Following is a representation of popular pre-training methods:
 * **Prefix and Encoder-Decoder**
 	* Useful for conditional text-generation tasks such as **translation** and **summarization**
 		* such tasks need a pre-trained model both capable of endcoding the text and generating the output
-	* (1) using an encoder with **fully-connected mask** (full-attention, no masking) to encode the source $$x$$ first and then (2) decode the target $$y$$ **auto-regressively** (from the left to right)
-	* **In Prefix-LM**: Encoder-Decoder weights are shared. So same parameters are used to encode $$x$$ and $$y$$
+	* (1) using an encoder with **fully-connected mask** (full-attention, no masking) to encode the source $x$ first and then (2) decode the target $y$ **auto-regressively** (from the left to right)
+	* **In Prefix-LM**: Encoder-Decoder weights are shared. So same parameters are used to encode $x$ and $y$
 		* Eg: UniLM 1-2, ERNIE-M
-	* **In Encoder-Decoder**: Weights are different for E & D. $$x$$ is encoded using encoder weight whereas, $$y$$ is encoded using decoder weight. 
+	* **In Encoder-Decoder**: Weights are different for E & D. $x$ is encoded using encoder weight whereas, $y$ is encoded using decoder weight. 
 		* Eg: T5, BART
 	* These models were typically used for **text generation purposes**, however, recently they are **being used for non-generation tasks** such as QA, Information Extraction etc. 
 
 
 ### Prompt Engineering
 
-* Creating a promtping function $$f{prompt}(x)$$
+* Creating a promtping function $f{prompt}(x)$
 * Manual template engineering
 * Automated template learning of discrete prompts: 
 	* Prompt mining ”[X] middle words [Z]” 
