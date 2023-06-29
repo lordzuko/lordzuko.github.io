@@ -5,8 +5,6 @@ dateString: June 2023
 draft: false
 tags: ["NLU", "Prompting"]
 weight: 107
-next: /posts/diffusion_models.md
-prev: /posts/energy_based_models.md
 ---
 
 # Prompting
@@ -80,7 +78,7 @@ The main training objective of the pre-trained LMs plays an important role in de
   * Corrupted Text Reconstruction (CTR)**: the processed text to its uncorrupted state by calculating *loss over only the noised parts* of the input sentence
   * Full Text Reconstruction (FTR)**: reconstruct the text by *calculating the loss over the entirety of the input texts* whether it has been noised or not
 * **Noising Functions**
-  * the specific type of corruption applied to obtain the noised text$ \\$\tilde{x}$\\ has an effect on the efficacy of the learning algorithm
+  * the specific type of corruption applied to obtain the noised text $\tilde{x}$ has an effect on the efficacy of the learning algorithm
   * prior knowledge can be incorporated by controlling the type of noise**, e.g. *the noise could focus on entities of a sentence, which allows us to learn a pre-trained model with particularly high predictive performance for entities*
 
 ![image](/posts/prompting/4.png)

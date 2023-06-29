@@ -49,16 +49,6 @@ params:
   hideMeta: false
   math: true # for latex
   comments: true # for giscus
-  ShowPostNavLinks: true
-  ShowShareButtons: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
 
   # for enchanced SEO
   env: production
