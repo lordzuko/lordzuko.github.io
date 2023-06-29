@@ -74,7 +74,7 @@ The main training objective of the pre-trained LMs plays an important role in de
 	
 ### Denoising Objective
 * Noising function: $\tilde{f} = f_{noise}(x)$
-* Task to predict: \\$P(x|\tilde{x})$\\
+* Task to predict: $P(x|\tilde{x})$
 * These types of reconstruction objectives are suitable for `cloze prompts`
 * Two common types of denoising objectives
   * Corrupted Text Reconstruction (CTR)**: the processed text to its uncorrupted state by calculating *loss over only the noised parts* of the input sentence
