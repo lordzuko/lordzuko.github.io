@@ -47,7 +47,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   hideMeta: false
-  enableLatex: true
+  math: true
 
   # for enchanced SEO
   env: production
