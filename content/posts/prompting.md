@@ -25,9 +25,9 @@ Readings:
 * Now we are moving towards `pre-train, prompt, predict` paradigm. Instead of adapting pre-trained LMs to downstream tasks via `objective-engineering`, we are reformulating the downstream tasks to look more like those solved during the original LM training with the help of textual `prompt`
 	* Eg:`“I felt so ___” `, and ask the LM to fill the blank with an emotion-bearing word. Or if we choose the prompt `“English: I missed the bus today. French: ”`), an LM may be able to fill in the blank with a French translation.
 
-[]("/posts/prompting/Screenshot 2023-05-03 at 7.31.59 PM.png")
+![image]("/posts/prompting/Screenshot 2023-05-03 at 7.31.59 PM.png")
 ### Prompting Basics
-[]("/posts/prompting/Screenshot 2023-05-03 at 7.35.05 PM.png")
+![image]("/posts/prompting/Screenshot 2023-05-03 at 7.35.05 PM.png")
 * **Terminologies**:
 	* `prefix prompt`: variety of prompt where the input text comes entirely before $$\bf{z}$$
 	* `cloze prompt`: the first variety of prompt with a slot to fill in the middle of the text
@@ -49,7 +49,7 @@ Readings:
 
 * **Design Considerations for Prompting**
 
-[]("/posts/prompting/Screenshot 2023-05-03 at 7.36.37 PM.png")
+![image]("/posts/prompting/Screenshot 2023-05-03 at 7.36.37 PM.png")
 
 ### Pre-trained Language Models
 
@@ -80,7 +80,7 @@ The main training objective of the pre-trained LMs plays an important role in de
 		* the specific type of corruption applied to obtain the noised text $$\tilde{x}$$ has an effect on the efficacy of the learning algorithm
 		* **prior knowledge can be incorporated by controlling the type of noise**, e.g. *the noise could focus on entities of a sentence, which allows us to learn a pre-trained model with particularly high predictive performance for entities*
 
-[]("/posts/prompting/Screenshot 2023-05-03 at 8.55.29 PM.png")
+![image]("/posts/prompting/Screenshot 2023-05-03 at 8.55.29 PM.png")
 
 
 * **SLM** or **FTR** objectives are maybe more suitable for *generation tasks*
@@ -102,14 +102,14 @@ The main training objective of the pre-trained LMs plays an important role in de
 * **Left-to-right:** diagonal attention masking 
 * Mix the two strategies
 
-[](/posts/prompting/Screenshot 2023-05-03 at 9.00.35 PM.png)
+![image](/posts/prompting/Screenshot 2023-05-03 at 9.00.35 PM.png)
 
 #### Typical Pre-training Methods
 
 Following is a representation of popular pre-training methods:
-[]("/posts/prompting/Screenshot 2023-05-03 at 9.02.59 PM.png")
+![image]("/posts/prompting/Screenshot 2023-05-03 at 9.02.59 PM.png")
 
-[]("/posts/prompting/Screenshot 2023-05-03 at 9.02.42 PM.png")
+![image]("/posts/prompting/Screenshot 2023-05-03 at 9.02.42 PM.png")
 * **Left-to-Right Language Model**
 	* Popular backbone for many prompting methods. Representative examples of modern pre-trained left-to-right LMs include **GPT-3** , and **GPT-Neo**
 	* Generally large and difficult to train - generally not available to public, thus `pretraining and finetuning`  is generally not possible
