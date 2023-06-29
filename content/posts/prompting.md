@@ -29,7 +29,7 @@ Readings:
 ### Prompting Basics
 ![image](/posts/prompting/2.png)
 * **Terminologies**:
-	* `prefix prompt`: variety of prompt where the input text comes entirely before $\bf{z}$
+	* `prefix prompt`: variety of prompt where the input text comes entirely before `$\bf{z}$`
 	* `cloze prompt`: the first variety of prompt with a slot to fill in the middle of the text
 
  * **Prompt Addition**: $f_{prompt}(x)$ is applied on $\bf{x}$ to to generate $\mathbf{x}' = f_{prompt}(x)$
