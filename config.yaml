@@ -47,7 +47,8 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   hideMeta: false
-  math: true
+  math: true # for latex
+  comments: true # for giscus
 
   # for enchanced SEO
   env: production
