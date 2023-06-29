@@ -5,7 +5,7 @@ draft: false
 dateString: June 2023
 tags: ["TTS", "PyTorch", "FastSpeech2"]
 showToc: true
-weight: 203
+weight: 201
 # cover:
 #     image: "projects/automated-image-captioning/cover.jpg"
 --- 

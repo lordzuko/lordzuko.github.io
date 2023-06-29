@@ -5,7 +5,7 @@ draft: false
 dateString: June 2023
 tags: ["Streamlit", "TTS", "Python"]
 showToc: true
-weight: 203
+weight: 202
 --- 
 
 ## 🔗 [Github](https://github.com/lordzuko/speech-editor)

@@ -5,7 +5,7 @@ draft: false
 dateString: June 2023
 tags: ["TTS", "Unit Selection", "Festival", "Speech Databases", "HTK", "sox"]
 showToc: true
-weight: 203
+weight: 207
 # cover:
 #     image: "projects/automated-image-captioning/cover.jpg"
 --- 
