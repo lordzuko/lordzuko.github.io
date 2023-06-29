@@ -1,6 +1,6 @@
 ---
 title: "Prompting"
-description: "Understanding basics of Generative Modeling"
+description: "A new paradigm in language modeling "
 dateString: June 2023
 draft: false
 tags: ["NLU", "Prompting"]
