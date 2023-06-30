@@ -21,13 +21,13 @@ params:
     - projects
     - posts
 
-  disableAnchoredHeadings: true
+  disableAnchoredHeadings: false
   images: ["cover.png"]
   DateFormat: "2006-01-02"
   useCustomAnalytics: true
 
-  # defaultTheme: auto
-  disableThemeToggle: true
+  defaultTheme: auto
+  disableThemeToggle: false
   ShowShareButtons: true
   ShowReadingTime: true
   ShowWordCount: true
