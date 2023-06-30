@@ -10,7 +10,7 @@ weight: 205
 #     image: "projects/automated-image-captioning/cover.jpg"
 --- 
 
-### 🔗 [Github](https://github.com/lordzuko/SpeakingStyle)
+## 🔗 [Github]()
 
 ## Description
 

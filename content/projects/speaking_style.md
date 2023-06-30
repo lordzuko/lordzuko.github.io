@@ -11,7 +11,7 @@ weight: 201
 --- 
 <!-- dateString: Jan 2021 - May 2021 -->
 
-### [🔗 Github](https://github.com/lordzuko/SpeakingStyle)
+## [🔗 Github](https://github.com/lordzuko/SpeakingStyle)
 
 ## Description
 To generate appropriate speech in context, we must not only consider what is said but also how it is said. Prosody is used to influence a particular meaning, to indicate attitude and emotion, and more. Modelling prosody in Text-To-Speech (TTS) is a highly complex task, as prosody manifests itself in multiple hierarchies in speech, from phone-level acoustic features to suprasegmental effects spanning multiple sentences. As perception of certain prosodic features is highly subjective and prosodically labelled speech corpora are scarce, researchers have looked to unsupervised methods of modelling prosody in TTS.

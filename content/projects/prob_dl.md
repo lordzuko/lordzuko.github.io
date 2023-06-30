@@ -8,7 +8,7 @@ showToc: true
 weight: 206
 --- 
 
-### 🔗 [Github](https://github.com/lordzuko/probabilistic-deep-learning)
+## 🔗 [Github](https://github.com/lordzuko/probabilistic-deep-learning)
 
 ## Bayesian Deep Learning
 ## Deep Probabilistic Models
