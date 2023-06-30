@@ -5,7 +5,6 @@ dateString: Jan 2020 - Dec 2021
 draft: false
 tags: ["Machine Learning", "Python", "Teaching"]
 showToc: false
-weight: 308
 --- 
 
 ## Description

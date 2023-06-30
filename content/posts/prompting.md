@@ -1,14 +1,14 @@
 ---
 title: "Prompting"
-description: "A new paradigm in language modeling "
-dateString: June 2023
+date: 2023-02-07T23:29:21+08:00
 draft: false
+ShowToc: true
+category: [ai]
 tags: ["NLU", "Prompting"]
-weight: 107
+category: ["ai"]
+description: "A new paradigm in language modeling"
+summary: "A new paradigm in language modeling "
 ---
-
-# Prompting
-
 Readings:
 * Sections 1-3 [Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language](https://arxiv.org/abs/2107.13586) [Processing](https://arxiv.org/abs/2107.13586), Liu et al. (2021)
 * [Language models are unsupervised multitask learners](https://d4mucfpksywv.cloudfront.net/better-language-models/language-models.pdf), Radford et al. (2019)
@@ -23,11 +23,10 @@ Readings:
 * Now we are moving towards `pre-train, prompt, predict` paradigm. Instead of adapting pre-trained LMs to downstream tasks via `objective-engineering`, we are reformulating the downstream tasks to look more like those solved during the original LM training with the help of textual `prompt`
 	* Eg:`“I felt so ___” `, and ask the LM to fill the blank with an emotion-bearing word. Or if we choose the prompt `“English: I missed the bus today. French: ”`, an LM may be able to fill in the blank with a French translation.
 
-![image](/posts/prompting/1.png)
+![](images/posts/prompting/1.png)
 ## Prompting Basics
 
-![image](/posts/prompting/2.png)
-
+![](images/posts/prompting/2.png)
 ### Terminologies
 * `prefix prompt`: variety of prompt where the input text comes entirely before $\bf{z}$
 * `cloze prompt`: the first variety of prompt with a slot to fill in the middle of the text
@@ -50,7 +49,7 @@ We would like to go from the highest-scoring answer $zˆ$ to the highest-scoring
 
 ### Design Considerations for Prompting
 
-![image](/posts/prompting/3.png)
+![image](images/posts/prompting/3.png)
 
 ## Pre-trained Language Models
 
@@ -81,7 +80,7 @@ The main training objective of the pre-trained LMs plays an important role in de
   * the specific type of corruption applied to obtain the noised text $\tilde{x}$ has an effect on the efficacy of the learning algorithm
   * prior knowledge can be incorporated by controlling the type of noise**, e.g. *the noise could focus on entities of a sentence, which allows us to learn a pre-trained model with particularly high predictive performance for entities*
 
-![image](/posts/prompting/4.png)
+![image](images/posts/prompting/4.png)
 
 
 ### SLM or FTR
@@ -104,14 +103,14 @@ Pre-trained LM can be different based on the directionality of the calculation o
 * **Left-to-right:** diagonal attention masking 
 * Mix the two strategies
 
-![image](/posts/prompting/5.png)
+![image](images/posts/prompting/5.png)
 
 ## Typical Pre-training Methods
 
 Following is a representation of popular pre-training methods:
-![image](/posts/prompting/6.png)
+![image](images/posts/prompting/6.png)
 
-![image](/posts/prompting/7.png)
+![image](images/posts/prompting/7.png)
 ### Left-to-Right Language Model
 * Popular backbone for many prompting methods. Representative examples of modern pre-trained left-to-right LMs include **GPT-3** , and **GPT-Neo
 * Generally large and difficult to train - generally not available to public, thus `pretraining and finetuning`  is generally not possible

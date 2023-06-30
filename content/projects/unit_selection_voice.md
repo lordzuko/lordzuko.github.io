@@ -9,7 +9,8 @@ weight: 207
 # cover:
 #     image: "projects/automated-image-captioning/cover.jpg"
 --- 
-## 🔗 [Report](/projects/unit-selection-voice/speech_synthesis_report.pdf)
+
+## [🔗 Report](/speech_synthesis_report.pdf)
 
 
 ## Description
@@ -21,7 +22,7 @@ Abstract — This report explores the construction of a unit selection voice for
 Record your speech and build a unit selection voice for Festival. Create variations of the voice, add domain specific data, or vary the database size. Evaluate with a listening test.
 - [Instructions](https://speech.zone/exercises/build-a-unit-selection-voice/)
 - [Data](https://drive.google.com/drive/folders/11qP_Hcm8PpKr8L2hLKKKfZZDOx-8PDDR?usp=sharing)
-- [Qualtrics Survey](/projects/unit-selection-voice/Speech_Synthesis.qsf)
+- [Qualtrics Survey](/Speech_Synthesis.qsf)
 
 ## Citations
 

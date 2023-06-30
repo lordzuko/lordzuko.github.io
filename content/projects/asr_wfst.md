@@ -6,10 +6,10 @@ dateString: June 2023
 tags: ["ASR", "WFST", "Viterbi Decoder"]
 showToc: true
 weight: 204
---- 
+---
 
-## 🔗 [Github]()
-## 🔗 [Report](/projects/asr-wfst/asr_report.pdf)
+[🔗 Github]()
+[🔗 Report](/asr_report.pdf)
 
 
 ## Description

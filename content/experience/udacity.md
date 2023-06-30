@@ -22,4 +22,4 @@ I am offering mentorship for following Nanodegrees at Udacity's School of AI
 Having a dedicated and knowledgeable mentor on hand to answer their question, provide support and feedback on project reviews helps students acquire new skills faster and graduate ready to tackle the demands of the job market. Your diligence and cooperation in this endeavor is much appreciated.
 
 As a part of this acknowledgement, we are pleased to award you an `Elite Mentor Badge`. 
-![](/experience/udacity/badge.jpg#center)
+![](images/experience/udacity/badge.jpg)

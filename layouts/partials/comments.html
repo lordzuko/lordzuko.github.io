@@ -1,5 +1,19 @@
-<script src="https://giscus.app/client.js" data-repo="lordzuko/lordzuko.github.io" data-repo-id="R_kgDOJ0BUtg"
-    data-category="[ENTER CATEGORY NAME HERE]" data-category-id="[ENTER CATEGORY ID HERE]" data-mapping="pathname"
-    data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom"
-    data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async>
+<!-- Comment System Support -->
+<div id="comment">
+    <script id="utterances" src="https://utteranc.es/client.js" repo="lordzuko/lordzuko.github.io" issue-term="title"
+        label="comment" theme="preferred-color-scheme" crossorigin="anonymous" async></script>
+    <script>
+        // remove comment if QQ or WeChat detected.
+        let ua = navigator.userAgent.toLocaleLowerCase();
+        if (ua.match(/QQ/i) == "qq") {
+            document.getElementById("utterances").remove();
+        }
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            document.getElementById("utterances").remove();
+        }
     </script>
+</div>
+<!-- MermaidJS support -->
+{{ if (.Params.mermaid) }}
+<script async src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+{{ end }}
