@@ -26,8 +26,8 @@ params:
   DateFormat: "2006-01-02"
   useCustomAnalytics: true
 
-  defaultTheme: auto
-  # disableThemeToggle: true
+  # defaultTheme: auto
+  disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
   ShowWordCount: true
