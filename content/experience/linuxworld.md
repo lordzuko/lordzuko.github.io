@@ -13,5 +13,5 @@ weight: 309
 - Worked on High Performance Distributed Computing Implements for BigData using Hadoop Framework and running on large clusters - Distributed Computing Implemented for BigData using Hadoop.
 - Automated integration testing of all the major backend workflows saving more than 2h of weekly testing time.
 
-![](/experience/linuxworld/ivory.jpg#center)
-![](/experience/linuxworld/ivory_landing.jpg#center)
+![](images/experience/linuxworld/ivory.jpg)
+![](images/experience/linuxworld/ivory_landing.jpg)

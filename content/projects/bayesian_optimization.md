@@ -339,15 +339,15 @@ def improvement_probability(x_test,
     z = delta / (std + 1e-9)
     return norm.cdf(z)
 ```
-|                                                        |
-| :----------------------------------------------------: |
-| ![my image](/projects/bayesian-optimization/poi/0.png) |
-| ![my image](/projects/bayesian-optimization/poi/1.png) |
-| ![my image](/projects/bayesian-optimization/poi/2.png) |
-| ![my image](/projects/bayesian-optimization/poi/3.png) |
-| ![my image](/projects/bayesian-optimization/poi/4.png) |
-| ![my image](/projects/bayesian-optimization/poi/5.png) |
-| ![my image](/projects/bayesian-optimization/poi/6.png) |
+|                                                              |
+| :----------------------------------------------------------: |
+| ![my image](images/projects/bayesian-optimization/poi/0.png) |
+| ![my image](images/projects/bayesian-optimization/poi/1.png) |
+| ![my image](images/projects/bayesian-optimization/poi/2.png) |
+| ![my image](images/projects/bayesian-optimization/poi/3.png) |
+| ![my image](images/projects/bayesian-optimization/poi/4.png) |
+| ![my image](images/projects/bayesian-optimization/poi/5.png) |
+| ![my image](images/projects/bayesian-optimization/poi/6.png) |
 
 
 ### Expected Improvement
@@ -376,15 +376,15 @@ def expected_improvement(x_test,
     
     return exp_improv
 ```
-|                                                       |
-| :---------------------------------------------------: |
-| ![my image](/projects/bayesian-optimization/ei/0.png) |
-| ![my image](/projects/bayesian-optimization/ei/1.png) |
-| ![my image](/projects/bayesian-optimization/ei/2.png) |
-| ![my image](/projects/bayesian-optimization/ei/3.png) |
-| ![my image](/projects/bayesian-optimization/ei/4.png) |
-| ![my image](/projects/bayesian-optimization/ei/5.png) |
-| ![my image](/projects/bayesian-optimization/ei/6.png) |
+|                                                             |
+| :---------------------------------------------------------: |
+| ![my image](images/projects/bayesian-optimization/ei/0.png) |
+| ![my image](images/projects/bayesian-optimization/ei/1.png) |
+| ![my image](images/projects/bayesian-optimization/ei/2.png) |
+| ![my image](images/projects/bayesian-optimization/ei/3.png) |
+| ![my image](images/projects/bayesian-optimization/ei/4.png) |
+| ![my image](images/projects/bayesian-optimization/ei/5.png) |
+| ![my image](images/projects/bayesian-optimization/ei/6.png) |
 
 ### Lower Confidence Bound
 
@@ -410,12 +410,12 @@ def lower_confidence_bound(x_test,
     return lcb
 ```
 
-|                                                        |
-| :----------------------------------------------------: |
-| ![my image](/projects/bayesian-optimization/lcb/0.png) |
-| ![my image](/projects/bayesian-optimization/lcb/1.png) |
-| ![my image](/projects/bayesian-optimization/lcb/2.png) |
-| ![my image](/projects/bayesian-optimization/lcb/3.png) |
-| ![my image](/projects/bayesian-optimization/lcb/4.png) |
-| ![my image](/projects/bayesian-optimization/lcb/5.png) |
-| ![my image](/projects/bayesian-optimization/lcb/6.png) |
+|                                                              |
+| :----------------------------------------------------------: |
+| ![my image](images/projects/bayesian-optimization/lcb/0.png) |
+| ![my image](images/projects/bayesian-optimization/lcb/1.png) |
+| ![my image](images/projects/bayesian-optimization/lcb/2.png) |
+| ![my image](images/projects/bayesian-optimization/lcb/3.png) |
+| ![my image](images/projects/bayesian-optimization/lcb/4.png) |
+| ![my image](images/projects/bayesian-optimization/lcb/5.png) |
+| ![my image](images/projects/bayesian-optimization/lcb/6.png) |

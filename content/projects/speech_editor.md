@@ -8,5 +8,5 @@ showToc: true
 weight: 202
 --- 
 
-## 🔗 [Github](https://github.com/lordzuko/speech-editor)
+## [🔗 Github](https://github.com/lordzuko/speech-editor)
 

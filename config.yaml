@@ -1,79 +1,79 @@
 baseURL: "https://lordzuko.github.io/"
-languageCode: en-us
-title: Himanshu Maurya
-theme: PaperMod
+title: Lordzuko's Blog
+paginate: 10
+theme: PaperModX
+# NOTE remove this line if you copy exampleSite outof hugo-PaperModX
+# themesdir: ../..
 
-menu:
-  main:
-    - identifier: home
-      name: Home
-      url: /
-      weight: 10
-    - identifier: posts
-      name: Posts
-      url: /posts
-      weight: 20
-    - identifier: projects
-      name: Projects
-      url: /projects
-      weight: 30
-    - identifier: experience
-      name: Experience
-      url: /experience
-      weight: 40
-    - identifier: search
-      name: Search
-      url: /search
-      weight: 50
-    # - identifier: archive
-    #   name: Archives
-    #   url: archives
-    #   weight: 60
-
-    - identifier: tags
-      name: Tags
-      url: /tags
-      weight: 60
-
-    # - identifier: Notes
-    #   name: Notes
-    #   url: https://lordzuko.github.io/second-brain/
-    #   weight: 80
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
 
 params:
-  # theme
-  showToc: true
-  TocOpen: false
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Theme PaperModX - https://github.com/reorx/hugo-PaperModX"
+  author:
+    - Himanshu Maurya
+  mainSections:
+    - projects
+    - posts
+
+  disableAnchoredHeadings: true
+  images: ["cover.png"]
+  DateFormat: "2006-01-02"
+  useCustomAnalytics: true
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowWordCount: true
+  math: true
+  comments: true
+  disqusShortname: lordzuko
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  hideMeta: false
-  math: true # for latex
-  comments: true # for giscus
-  ShowPostNavLinks: true
-  ShowShareButtons: true
-  ShowRssButtonInSectionTermList: true
-  UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  hidemeta: false
-  hideSummary: false
-  showtoc: false
-  tocopen: false
+  ShowToc: true
+  TocOpen: true
+  TocSide: "left"
+  EnableInstantClick: true
+  EnableImageZoom: true
 
-  # for enchanced SEO
-  env: production
+  # commentSystems:
+  #   disqus:
+  #     shortname: reorx
+  #   remark42:
+  #     url: https://remark42.reorx.com
+  #     site: reorx.github.io
+  #   telegramWidget:
+  #     channel: reorx_share
+  #     accentColor: "9077e1"
+  #     limit: 20
+  # defaultCommentSystems:
+  #   remark42: true
 
-  # Home Page
   profileMode:
     enabled: true
+    # imageTitle: my image
+    # imageWidth: 120
+    # imageHeight: 120
+    buttons:
+      - name: Archives
+        url: /archives/
+      - name: Tags
+        url: /tags/
+
     title: "Himanshu Maurya"
     subtitle: "Hi, there 👋. My name is Himanshu Maurya. I am a masters student in Speech and Language Processing at University of Edinburgh. I am also a Mentor-Reviewer @udacity School of Artificial Intelligence and an Ex-Lead Machine Learning Engineer @iSchoolConnect."
-    imageUrl: "home/me.jpg"
-    imageWidth: 400
-    imageHeight: 500
-    # buttons:
-    #   - name: Resume
-    #     url: ""
+    imageUrl: "images/home/me.jpg"
+    imageWidth: 300
+    imageHeight: 400
 
   # List View
   hideDescriptionInList: false
@@ -93,9 +93,25 @@ params:
     - name: "youtube"
       url: "https://www.youtube.com/@HimanshuMauryalordzuko/"
     - name: "cv"
-      url: "/home/Himanshu_Maurya_CV.pdf"
+      url: "/Himanshu_Maurya_CV.pdf"
 
-  # text search
+  # label:
+  #     text: "Home"
+  #     icon: icon.png
+  #     iconHeight: 35
+
+  # assets:
+  #     favicon: "<link / abs url>"
+  #     favicon16x16: "<link / abs url>"
+  #     favicon32x32: "<link / abs url>"
+  #     apple_touch_icon: "<link / abs url>"
+  #     safari_pinned_tab: "<link / abs url>"
+
+  editPost:
+    URL: "https://github.com/lordzuko/lordzuko.github.io/tree/master/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -105,15 +121,119 @@ params:
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 
-# for search using Fuse.js
+minify:
+  disableXML: true
+  # minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    staticDir:
+      - static/
+    menu:
+      main:
+        - name: Posts
+          url: /posts/
+          weight: 1
+        - name: Projects
+          url: /projects/
+          weight: 2
+        - name: Tags
+          url: /tags/
+          weight: 4
+        - name: Archive
+          url: /archives/
+          weight: 5
+        - name: Search
+          url: /search/
+        - name: Experience
+          url: /experience/
+          weight: 4
+        # - name: "@Author"
+        #   url: "https://reorx.com"
+        #   params:
+        #     external: true
+
+  # zh:
+  #   languageName: ":cn:"
+  #   languageAltTitle: 中文
+  #   weight: 2
+  #   title: PaperModX
+  #   profileMode:
+  #     enabled: true
+  #     title: PaperModX
+  #     # imageUrl: "#"
+  #     # imageTitle: my image
+  #     # imageWidth: 120
+  #     # imageHeight: 120
+  #     subtitle: >
+  #       <p>Hugo 主题</p>
+  #       ☄️ 快速 | ☁️ 流畅 | 📖 可读性 | 📱 响应式
+  #     buttons:
+  #       - name: 文档
+  #         url: docs
+  #       - name: 标签
+  #         url: tags
+  #   menu:
+  #     main:
+  #       - name: 文档
+  #         url: docs
+  #         weight: 1
+  #       - name: 标签
+  #         url: tags/
+  #         weight: 4
+  #       - name: 归档
+  #         url: archives
+  #         weight: 5
+  #       - name: 搜索
+  #         url: search/
+  #         weight: 10
+  #       - name: "@作者"
+  #         url: "https://reorx.com"
+  #         params:
+  #           external: true
+
 outputs:
   home:
     - HTML
     - RSS
     - JSON
 
-# allow HTML in MD
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
 markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: dracula
+    lineNos: true
+    noClasses: false
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
