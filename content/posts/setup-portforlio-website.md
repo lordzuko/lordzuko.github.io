@@ -23,3 +23,5 @@ https://pprkut.com/posts/cheatsheet/#post-front-matter
 https://aimerneige.com/en/post/hello-hugo/
 
 https://kyxie.github.io/en/blog/tech/papermod/ - very nice UI
+
+https://github.com/hmajid2301/blog - very good papermod theme - v4 is modified papermodX
