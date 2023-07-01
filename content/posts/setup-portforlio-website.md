@@ -21,3 +21,5 @@ https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/
 
 https://pprkut.com/posts/cheatsheet/#post-front-matter
 https://aimerneige.com/en/post/hello-hugo/
+
+https://kyxie.github.io/en/blog/tech/papermod/ - very nice UI
