@@ -16,5 +16,7 @@ summary: "Introduction to LangChain framework and application development"
 ## Citations
 
 [1] [LangChain for LLM Application Development](https://learn.deeplearning.ai/langchain/lesson/1/introduction)
+
 [2] [LangChain: Chat with Your Data](https://learn.deeplearning.ai/langchain-chat-with-your-data/lesson/1/introduction)
+
 [3] [Building applications with LLMs through composability](https://github.com/hwchase17/langchain)
