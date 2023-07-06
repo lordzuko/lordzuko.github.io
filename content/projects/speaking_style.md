@@ -34,6 +34,8 @@ Here, we propose to manipulate the latent prosody space using light-supervision 
 
 ![my image](images/projects/speaking-style/training_log.png)
 
+## [🔗 Daft Exprt](https://arxiv.org/pdf/2108.02271.pdf)
+
 ### References
 
 [1] [Towards end-to-end prosody transfer for expressive speech synthesis with tacotron](http://proceedings.mlr.press/v80/skerry-ryan18a.html)
