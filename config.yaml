@@ -82,6 +82,8 @@ params:
       url: "https://www.youtube.com/@HimanshuMauryalordzuko/"
     - name: "cv"
       url: "/Himanshu_Maurya_CV.pdf"
+    - name: "stackoverflow"
+      url: "https://stackoverflow.com/users/3316461/lordzuko?tab=profile"
 
   # label:
   #     text: "Home"
