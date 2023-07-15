@@ -10,3 +10,4 @@ weight: 202
 
 ## [🔗 Github](https://github.com/lordzuko/speech-editor)
 
+![recording](images/projects/speech-editor/recording.gif)
