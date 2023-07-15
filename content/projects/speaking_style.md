@@ -21,8 +21,31 @@ Many propose to jointly train a reference encoder to model a latent representati
 
 Here, we propose to manipulate the latent prosody space using light-supervision from human annotators. Such strategies have already been proposed for speaker-modelling [5, 6] and speaker-adaptation [9] but not for speaking-style modelling. To achieve this we suggest to re-embed synthesised utterances that human annotators have tuned acoustically to match a target speaking style. After re-embedding the annotated utterances we aim to tune a fixed bank of style tokens [2]. This could not only further understanding the latent prosody space but also align it with human perception improving the quality of style generation.
 
-### Variance Adapters
+## Problem Description
 
+## Background
+
+![my image](images/projects/speaking-style/background/gs.png)
+![my image](images/projects/speaking-style/background/sa.png)
+![my image](images/projects/speaking-style/background/micvae.png)
+
+
+## Control Framework
+* **Efficiency**: Faster edits - few steps
+* **Robustness**: Generate realistic outputs regardless of the values provided
+* **Faithfulness**: To the desired reference (style/emotion etc.)
+* **Interpretability**: Are the edits meaningful, intuitive and reproducible?
+![my image](images/projects/speaking-style/control_framework/ideal-editing-process.png)
+
+## Research Questions
+
+## Details
+### FastSpeech2
+![fs2](images/projects/speaking-style/fs2.png)
+
+### FastSpeech2 Reference Mode
+![fs2-ref-mode](images/projects/speaking-style/fs2-reference-mode.png)
+### Variance Adapters
 
 | Steps |                            F0                             |                           Energy                           |                           Duration                           |
 | :---: | :-------------------------------------------------------: | :--------------------------------------------------------: | :----------------------------------------------------------: |
