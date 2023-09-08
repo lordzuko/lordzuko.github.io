@@ -1,9 +1,9 @@
 ---
-title: "Aligning latent space of speaking style with human perception using a re-embedding strategy"
+title: "Improving the Appropriateness in Cross-Text Prosody Transfer using Human Supervision"
 description: "Can we align model's perception of speaking style to human?"
 draft: false
 dateString: June 2023
-tags: ["TTS", "PyTorch", "FastSpeech2"]
+tags: ["TTS", "PyTorch", "FastSpeech2", "Daft-Exprt"]
 showToc: true
 weight: 201
 # cover:
@@ -11,7 +11,10 @@ weight: 201
 --- 
 <!-- dateString: Jan 2021 - May 2021 -->
 
-## [🔗 Github](https://github.com/lordzuko/SpeakingStyle)
+## [🔗 FastSpeech2](https://github.com/lordzuko/SpeakingStyle)
+## [🔗 Daft-Exprt](https://github.com/lordzuko/SpeakingStyle)
+## [🔗 HiFi-GAN](https://github.com/lordzuko/SpeakingStyle)
+## [🔗 User Interface](https://github.com/lordzuko/SpeakingStyle)]
 ## [🔗 Presentation](https://docs.google.com/presentation/d/e/2PACX-1vQN45HlKUO69dxy7b_-MzfF56Rz7r9mGDeh6J7by3UN6eI0sw8OtDQDrdVYyqB9pvJuCkPOYbZ3Ce4c/pub?start=false&loop=false&delayms=60000)
 
 ## Description
@@ -25,8 +28,11 @@ Here, we propose to manipulate the latent prosody space using light-supervision 
 
 ## Background
 
+###
 ![my image](images/projects/speaking-style/background/gs.png)
+###
 ![my image](images/projects/speaking-style/background/sa.png)
+### 
 ![my image](images/projects/speaking-style/background/micvae.png)
 
 
@@ -35,11 +41,12 @@ Here, we propose to manipulate the latent prosody space using light-supervision 
 * **Robustness**: Generate realistic outputs regardless of the values provided
 * **Faithfulness**: To the desired reference (style/emotion etc.)
 * **Interpretability**: Are the edits meaningful, intuitive and reproducible?
-![my image](images/projects/speaking-style/control_framework/ideal-editing-process.png)
+<!-- ![my image](images/projects/speaking-style/control_framework/ideal-editing-process.png){height=400px width=500px} -->
 
+![](images/projects/speaking-style/control_framework/ideal-editing-process.png | width=100)
 ## Research Questions
 
-## Details
+## Models
 ### FastSpeech2
 ![fs2](images/projects/speaking-style/fs2.png)
 

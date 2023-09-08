@@ -1,17 +1,21 @@
 ---
-title: "LangChain"
-date: 2023-07-05T23:29:21+08:00
+title: "Single Document QA using LangChain"
+date: 2023-09-01T23:29:21+08:00
 draft: false
 ShowToc: false
 category: [ai]
 tags: ["NLU", "AI", "Generative Modeling", "LLM"]
-description: "Introduction to LangChain framework and application development"
+description: "Introduction to LangChain framework and application development by building a single document QA chat"
 summary: "Introduction to LangChain framework and application development"
 ---
 
 # LangChain
 
 ## Introduction to framework
+
+### Terminologies
+
+* **Chain**: A sequence of calls to other components 
 
 ## Citations
 
