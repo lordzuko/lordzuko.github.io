@@ -1,19 +1,18 @@
 ---
 title: "Grind 75 Questions"
-date: 2023-09-11T23:29:21+08:00
+date: 2023-0911:29:21+08:00
 draft: false
 ShowToc: true
-category: [coding, interview prep]
+category: [coding, interview]
 tags: ["coding", "grind75", "interview"]
 description: "Grind 75 Questions for Interview Prep"
 summary: "Grind 75 Questions for Interview Prep"
 ---
 
-<!-- # Grind 75 questions -->
 
 # Week1
 
-## 1. [Two Sum](https://leetcode.com/problems/two-sum)
+## [Two Sum](https://leetcode.com/problems/two-sum)
 
 - Array
 
@@ -120,7 +119,7 @@ class Solution(object):
             data[x] = i
 ```
 
-## 2. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
+## [Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
 
 ### Problem
 
@@ -193,7 +192,7 @@ class Solution(object):
             return True
 ```
 
-## 3. [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
+## [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
 - Linked List
 
@@ -281,7 +280,7 @@ class Solution(object):
         return start
 ```
 
-## 4. [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
+## [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 
 - Array
 
@@ -349,7 +348,7 @@ class Solution(object):
         return max_profit
 ```
 
-## 5. [Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
+## [Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
 
 ### Problem
 
@@ -421,22 +420,263 @@ class Solution(object):
         return all (s[i] == s[-i-1] for i in range(len_s//2))
 ```
 
-## 6. [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
+## [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
 
-## 7. [Valid Anagram](https://leetcode.com/problems/valid-anagram)
+### Problem
 
-## 8. [Binary Search](https://leetcode.com/problems/binary-search)
+Given the `root` of a binary tree, invert the tree, and return *its root*.
 
-## 9. [Flood Fill](https://leetcode.com/problems/flood-fill)
+**Example 1:**
 
-## 10. [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+![https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg](https://assets.leetcode.com/uploads/2021/03/14/invert1-tree.jpg)
 
-## 11. [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)
+```
+Input: root = [4,2,7,1,3,6,9]
+Output: [4,7,2,9,6,3,1]
+```
 
-## 12. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
+**Example 2:**
 
-## 13. [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)
+![https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg](https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg)
+
+```
+Input: root = [2,1,3]
+Output: [2,3,1]
+
+```
+
+**Example 3:**
+
+```
+Input: root = []
+Output: []
+
+```
+
+**Constraints:**
+
+- The number of nodes in the tree is in the range `[0, 100]`.
+- `100 <= Node.val <= 100`
+
+### Solution
+
+```python
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def build_binary_tree(root):
+		"""
+		create a binary tree from array
+		root: array
+		"""
+    tot_nodes = len(root)
+    tree_nodes = []
+    for i in range(tot_nodes):
+        tree_nodes.append(TreeNode(val=root[i]))
+
+    for i in range(tot_nodes//2):
+        tree_nodes[i].left = tree_nodes[i*2+1]
+        tree_nodes[i].right = tree_nodes[i*2+2]
+
+    return tree_nodes[0]
+
+def traverse_binary_tree(root):
+		"""
+		Traverse a binary tree
+		root: TreeNode
+		"""
+    
+    bt_arr = []
+    stack = [root]
+    while stack:
+        
+        node = stack.pop(0)
+        
+        bt_arr.append(node.val)
+        if node.left:
+            stack.append(node.left)
+        if node.right:
+            stack.append(node.right)
+
+    return bt_arr
+
+class Solution(object):
+
+    def invertTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        stack = [root]
+        while stack:
+            node = stack.pop(0)
+            if node:
+                if node.left:
+                    stack.append(node.left)
+                if node.right:
+                    stack.append(node.right)
+
+                node.left, node.right = node.right, node.left
+
+        return root
+```
+
+## [Valid Anagram](https://leetcode.com/problems/valid-anagram)
+
+### Problem
+
+Given two strings `s` and `t`, return `true` *if* `t` *is an anagram of* `s`*, and* `false` *otherwise*.
+
+An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the  vaoriginal letters exactly once.
+
+**Example 1:**
+
+```
+Input: s = "anagram", t = "nagaram"
+Output: true
+```
+
+**Example 2:**
+
+```
+Input: s = "rat", t = "car"
+Output: false
+```
+
+**Constraints:**
+
+- `1 <= s.length, t.length <= 5 * 10^4`
+- `s` and `t` consist of lowercase English letters.
+
+**Follow up:** What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+
+### Solution
+
+```python
+from collections import Counter
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        count_s = Counter(s)
+        count_t = Counter(t)
+
+        if len(count_s.keys()) != len(count_t.keys()):
+            return False        
+
+        for k, v in count_s.items():
+            try:
+                if count_s[k] == count_t[k]:
+                    continue
+                else:
+                    return False
+            except KeyError as e:
+                return False
+        
+        return True
+```
+
+## [Binary Search](https://leetcode.com/problems/binary-search)
+
+### Problem
+
+Given an array of integers `nums` which is sorted in ascending order, and an integer `target`, write a function to search `target` in `nums`. If `target` exists, then return its index. Otherwise, return `-1`.
+
+You must write an algorithm with `O(log n)` runtime complexity.
+
+**Example 1:**
+
+```
+Input: nums = [-1,0,3,5,9,12], target = 9
+Output: 4
+Explanation: 9 exists in nums and its index is 4
+```
+
+**Example 2:**
+
+```
+Input: nums = [-1,0,3,5,9,12], target = 2
+Output: -1
+Explanation: 2 does not exist in nums so return -1
+```
+
+**Constraints:**
+
+- `1 <= nums.length <= 10^4`
+- `-10^4 < nums[i], target < 10^4`
+- All the integers in `nums` are **unique**.
+- `nums` is sorted in ascending order.
+
+### Solution
+
+```python
+from typing import List
+
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+				# O(log(N)) solution
+        start, end = 0, len(nums)-1
+        while start <= end:
+						# this prevents memory issues if numbers are too big
+            mid = start + (end-start)//2
+            
+            if target == nums[mid]:
+                return mid
+
+            elif target <= nums[mid]:
+                end = mid-1
+            else:
+                start = mid+1
+        return -1
+```
+
+## [Flood Fill](https://leetcode.com/problems/flood-fill)
+
+An image is represented by an `m x n` integer grid `image` where `image[i][j]` represents the pixel value of the image.
+
+You are also given three integers `sr`, `sc`, and `color`. You should perform a **flood fill** on the image starting from the pixel `image[sr][sc]`.
+
+To perform a **flood fill**, consider the starting pixel, plus any pixels connected **4-directionally** to the starting pixel of the same color as the starting pixel, plus any pixels connected **4-directionally** to those pixels (also with the same color), and so on. Replace the color of all of the aforementioned pixels with `color`.
+
+Return *the modified image after performing the flood fill*.
+
+![https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg](https://assets.leetcode.com/uploads/2021/06/01/flood1-grid.jpg)
+
+```
+Input: image = [[1,1,1],[1,1,0],[1,0,1]], sr = 1, sc = 1, color = 2
+Output: [[2,2,2],[2,2,0],[2,0,1]]
+Explanation: From the center of the image with position (sr, sc) = (1, 1) (i.e., the red pixel), all pixels connected by a path of the same color as the starting pixel (i.e., the blue pixels) are colored with the new color.
+Note the bottom corner is not colored 2, because it is not 4-directionally connected to the starting pixel.
+
+```
+
+**Example 2:**
+
+```
+Input: image = [[0,0,0],[0,0,0]], sr = 0, sc = 0, color = 0
+Output: [[0,0,0],[0,0,0]]
+Explanation: The starting pixel is already colored 0, so no changes are made to the image.
+```
+
+**Constraints:**
+
+- `m == image.length`
+- `n == image[i].length`
+- `1 <= m, n <= 50`
+- `0 <= image[i][j], color < 2^16`
+- `0 <= sr < m`
+- `0 <= sc < n`
+
+## [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+
+## [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)
+
+## [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
+
+## [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)
 
 # References
 
-[Grind 75 - A better Blind 75 you can customize, by the author of Blind 75](https://www.techinterviewhandbook.org/grind75)
+1. [Grind 75 - A better Blind 75 you can customize, by the author of Blind 75](https://www.techinterviewhandbook.org/grind75)
