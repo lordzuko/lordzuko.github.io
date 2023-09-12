@@ -669,7 +669,195 @@ Explanation: The starting pixel is already colored 0, so no changes are made to 
 - `0 <= sr < m`
 - `0 <= sc < n`
 
-## [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+## 10. [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
+
+### Problem
+
+Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
+
+According to the [definition of LCA on Wikipedia](https://en.wikipedia.org/wiki/Lowest_common_ancestor): “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow **a node to be a descendant of itself**).”
+
+**Example 1:**
+
+![https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png](https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png)
+
+```
+Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
+Output: 6
+Explanation: The LCA of nodes 2 and 8 is 6.
+```
+
+**Example 2:**
+
+![https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png](https://assets.leetcode.com/uploads/2018/12/14/binarysearchtree_improved.png)
+
+```
+Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
+Output: 2
+Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+```
+
+**Example 3:**
+
+```
+Input: root = [2,1], p = 2, q = 1
+Output: 2
+```
+
+**Constraints:**
+
+- The number of nodes in the tree is in the range `[2, 105]`.
+- `109 <= Node.val <= 10^9`
+- All `Node.val` are **unique**.
+- `p != q`
+- `p` and `q` will exist in the BST.
+
+### Solution
+
+```python
+from typing import List
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution:
+
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+
+        while root:
+            # if root is higher than both p and q, then the lowest ancestor
+            # must be on the left side of the root and vice versa
+            if root.val > p.val and root.val > q.val:
+                root = root.left
+            elif root.val < p.val and root.val < q.val:
+                root = root.right     
+            else:
+                return root
+```
+
+Instead of BST, the following code finds out LCA if the tree is Binary Tree
+
+([Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/))
+
+```python
+from typing import List
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+        self.parent = None
+        self.level = 0
+
+class Solution:
+
+    def build_tree(self, nodes = []) -> TreeNode:
+        tot_nodes = len(nodes)
+        tree_nodes = []
+        for i in range(tot_nodes):
+            tree_nodes.append(TreeNode(x=nodes[i]))
+
+        for i in range(tot_nodes//2):
+            tree_nodes[i].left = tree_nodes[i*2+1]
+            tree_nodes[i].right = tree_nodes[i*2+2]
+
+        return tree_nodes[0]
+
+    def traverse_binary_tree(self, root):
+    
+        bt_arr = []
+        stack = [root]
+        while stack:
+            
+            node = stack.pop(0)
+            
+            bt_arr.append(node.val)
+            if node.left:
+                stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
+
+        return bt_arr
+
+    def search(self, root: TreeNode, tgt: TreeNode) -> TreeNode:
+        stack = [root]
+        while stack:
+            node = stack.pop(0)
+            if node:
+                if node.val == tgt.val:
+                    return node
+                if node.left:
+                    node.left.parent = node
+                    stack.append(node.left)
+                if node.right:
+                    node.right.parent = node
+                    stack.append(node.right)
+
+    def backtrace_root(self, tgt: TreeNode)-> List:
+        path = []
+        path = [tgt]
+        while tgt:
+            path.append(tgt.parent)
+            tgt = tgt.parent
+        return path
+
+    def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+
+        head = root
+        root.parent = None
+        root.level = 0
+        stack = [root]
+        level = 0
+        # Add parents to tree
+        while stack:
+            
+            node = stack.pop(0)
+            if node:
+                level+=1
+                if node.left:
+                    node.left.parent = node
+                    node.left.level = level
+                    stack.append(node.left)
+                if node.right:
+                    node.right.parent = node
+                    node.right.level = level
+                    stack.append(node.right)
+
+        path_p = self.backtrace_root(p)
+        path_q = self.backtrace_root(q)
+        # print([x.val for x in path_p ])
+        # print([x.val for x in path_q if x])
+        # print(path_p, path_q)
+        
+        common_nodes = set(path_p).intersection(set(path_q))
+        common_nodes.remove(None)
+        common_nodes = list(common_nodes)
+        common_nodes = sorted(common_nodes, key=lambda x: x.level)
+        return common_nodes[-1]
+                
+
+if __name__ == "__main__":
+    p = TreeNode(x=2)
+    q = TreeNode(x=4)
+    # nodes = [6,2,8,0,4,7,9,"null","null",3,5]
+    nodes = [6,2,8,0,4,7,9,"null","null",3,5]
+    obj = Solution()
+    root = obj.build_tree(nodes)
+    print(obj.traverse_binary_tree(root))
+    print(root.val, root.parent)
+    p = obj.search(root=root, tgt=p)
+    q = obj.search(root=root, tgt=q)
+    print(p.val, p.parent, p.left, p.right)
+    print(q.val, q.parent, q.left, q.right)
+    print(obj.lowestCommonAncestor(root, p, q).val)
+```
+
 
 ## [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)
 
