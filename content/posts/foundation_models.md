@@ -1,7 +1,7 @@
 ---
 title: "Foundation Models from Ground Up"
 date: 2023-08-01T10:29:21+08:00
-draft: true
+draft: false
 ShowToc: true
 category: [ai]
 tags: ["llms", "ai"]
