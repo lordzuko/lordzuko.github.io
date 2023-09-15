@@ -9,6 +9,8 @@ description: "Understanding the Large Language Models and their applications"
 summary: "This post is an introduction of LLMs, what makes them such a hot topic in the world of AI today."
 ---
 
+> :memo: **NOTE** This post is still in active drafting stage. I am working on adding diagrams, figures and code snippets which will be added soon.
+
 # 1. Large Language Models
 
 ## Why LLMs?
