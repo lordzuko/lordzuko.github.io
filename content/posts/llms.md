@@ -1,7 +1,7 @@
 ---
 title: "Large Language Models and their Applications"
 date: 2023-09-15T10:29:21+08:00
-draft: false
+draft: true
 ShowToc: true
 category: [ai]
 tags: ["llms", "ai"]
