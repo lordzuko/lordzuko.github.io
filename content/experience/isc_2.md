@@ -10,12 +10,13 @@ weight: 302
 
 ## Description
 
-- **Writing Analysis**: Multi-aspect analysis of college admission essays for content coverage and quality. Suggestion for areas of improvement of essay, resulting in the best possible essay as per applicants writing potential
 
-- **Lead author for filed patent**: `MAURYA, Himanshu, et al.`
-*Machine Learning System for Analyzing the Quality and Efficacy of Essays for Higher Education Admissions*
+Led a diverse team of 8 including Machine Learning Engineers, Data Engineers and Data Annotators shaping the company's AI product offerings and driving feature enhancements.
 
-- **Content Classification**: Identification of the presence of important aspects such as Future Goals, Work
-Experience etc. using a stacking ensemble of custom multi-label machine learning and deep learning algorithms (eg. XGBoost, LSTMs, Transformers etc.)
-- **Grammar Correction**: Identification of incorrect use of grammar, identification of voice, grammatical errors such as Verb Errors, Logical Confusion, NOT Problem, Unclear Pronouns, Contractions etc.
-- **iSCLinguisticLib**: Created and maintains an inhouse library for building textual features such as Coherence, Discourse, Psycholinguistic etc. to be consumed for model training
+* **Automatic Essay Feedback** : Fine-tuned a pre-trained T5 and GPT-2 model for automatic essay feedback generation using a curated dataset of essay feedback tailored for college admission essays improvement, resulting in 20% faster turnaround time and 37% reduction in editing service cost to company
+
+* Trained Adapter Transformers (Adapter Fusion, Parallel Adapter, Mix-n-match Adapters) for low-resource model training and tackling data-scarcity by leveraging learning from data-rich classes. Effectively reduced deployed model parameters by one-eighth.
+
+* Lead author for filed patent: MAURYA, Himanshu, et al. Machine Learning System for Analyzing the Quality and Efficacy of Essays for Higher Education Admissions
+
+* Awarded *"A Beautiful Mind"* award for Commitment to Innovation for H2 2020 by iSchoolConnect, April 2020

@@ -9,6 +9,4 @@ weight: 304
 --- 
 ## Description
 
-<!-- **Guide:** **Dr. Sripad Krishna Devalla** (co-founder and CTO at OriginHealth) -->
-
-- Document Writing Mentor: System analyses Statement of Purpose & Admission Essays for content quality and coverage of important aspects, grammatical correctness, and providing actionable feedback on improvement of applicant’s essays
+* **Writing Mentor:** System analyses Statement of Purpose & Admission Essays for content quality and coverage of important aspects, grammatical correctness, and providing actionable feedback on improvement of applicant’s essays

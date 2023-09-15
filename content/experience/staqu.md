@@ -10,8 +10,7 @@ weight: 306
 <!-- ### 🔗 [GitHub](https://github.com/arkalim/Tensorflow/tree/master/VLocNet) -->
 
 ## Description
-<!-- **Guide:** **Prof. Dr. Pratyush Kumar** (Assistant Professor, Dept. of Computer Science, IIT Madras) -->
 
-- Conducted NLP research as an individual contributor on NER, Stance Detection, Machine Translation, Intent detection & Slot filling, Neural Recommendation Engine.
+Conducted NLP research as an individual contributor on NER, Stance Detection, Machine Translation, Intent detection & Slot filling, Neural Recommendation Engine.
 
-- News Intelligence Engine: Implemented NER for Indian languages, similar news clustering and news translation modules. This was later integrated with PINE, an advanced AI data aggregation tool.
+* **News Intelligence Engine:** Implemented NER for Indian languages, similar news clustering and machine translation modules. This was later integrated with PINE, an advanced AI data aggregation tool.

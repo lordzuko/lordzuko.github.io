@@ -9,7 +9,4 @@ weight: 301
 --- 
 ## Description
 
-<!-- **Guide:** **Dr. Sripad Krishna Devalla** (co-founder and CTO at OriginHealth) -->
-
-- Developed a python package for finding optimal routes with stops for optimal Vehicle Routing by
-simultaneously optimizing for Capacity, Time and Distance constraints using Google OR-tools.
+* **Vehicle Route Optimization:** Developed a python package for finding optimal routes with stops for optimal Vehicle Routing by simultaneously optimizing for Capacity, Time and Distance constraints using Google OR-tools.
