@@ -5,7 +5,7 @@ draft: false
 ShowToc: true
 category: [ai]
 tags: ["llms", "ai", "inference"]
-description: "A guide to fine-tuning GPT-X models with DeepSpeed"
+description: "Techniques to load LLMs on smaller GPUs and enable parallel inference using Hugging Face Accelerate"
 ---
 
 *With the rise of deep learning and the development of increasingly powerful models, pre-trained language models have grown in size. While these models deliver impressive performance in various natural language processing (NLP) tasks, their sheer magnitude poses challenges for inference on resource-constrained devices and large-scale distributed systems. Enter sharding, a technique that divides large models into smaller, more manageable parts, offering an efficient and faster approach to distributed inference.*
